@@ -38,6 +38,7 @@ namespace UnityBenchmark
                 Debug.Log(string.Format("onetime: {0} ms", currentTime.TotalMilliseconds));
             }
             Debug.Log(string.Format("total: {0} ms", totalTime.TotalMilliseconds));
+            Destroy(this.gameObject);
         }
     }
 }

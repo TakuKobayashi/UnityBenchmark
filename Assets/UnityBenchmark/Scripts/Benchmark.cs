@@ -48,7 +48,7 @@ namespace UnityBenchmark
         /// </summary>
         public static BenchmarkBehaviour ExecuteCoroutine(int times, Func<IEnumerator> process)
         {
-            GameObject benchMarkObject = new GameObject();
+            GameObject benchMarkObject = new GameObject("BenchMarkObject");
             BenchmarkBehaviour benchmarkBehaviour = benchMarkObject.AddComponent<BenchmarkBehaviour>();
             benchmarkBehaviour.Execute(times, process);
             return benchmarkBehaviour;
